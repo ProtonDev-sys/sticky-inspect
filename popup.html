@@ -8,20 +8,14 @@
   </head>
   <body>
     <main class="popup">
-      <p class="eyebrow">Sticky Inspect</p>
-      <h1>Persistent page edits for real sites.</h1>
-      <p class="subtitle">Pick one element, save one rule, and replay it across the whole site before the page settles in.</p>
-      <section class="panel">
-        <p class="panel-label">Current site</p>
-        <p id="status" class="status">Checking current tab...</p>
-        <p id="pageKey" class="page-key"></p>
-      </section>
+      <h1>Sticky Inspect</h1>
+      <p id="status" class="status">Checking current tab...</p>
+      <p id="pageKey" class="page-key"></p>
       <section class="actions">
         <button id="pickButton" type="button">Pick Element</button>
         <button id="applyButton" type="button">Apply Saved Rules</button>
-        <button id="clearButton" type="button" class="danger">Clear Saved Rules</button>
+        <button id="clearButton" type="button">Clear Saved Rules</button>
       </section>
-      <p class="hint">Use the picker to click an element on the page, then choose what to persist.</p>
     </main>
     <script src="popup.js"></script>
   </body>
