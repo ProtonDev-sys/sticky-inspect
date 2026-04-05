@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Sticky Inspect",
+  "version": "0.3.0",
+  "description": "Pick elements, save targeted changes, and reapply them across a site.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Sticky Inspect",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
